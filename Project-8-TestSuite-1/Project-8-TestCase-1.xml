@@ -293,38 +293,6 @@
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep type="restrequest" name="/pet/findByStatus GET Request 1" id="b1055234-cc46-42d2-8bff-3ff4924571c5">
-    <con:settings/>
-    <con:config service="Swagger Petstore" resourcePath="/v2/pet/findByStatus" methodName="findPetsByStatus" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:restRequest name="/pet/findByStatus GET Request 1" id="e8055df1-4abb-4161-866c-807b54d364ed" mediaType="application/json">
-        <con:settings/>
-        <con:endpoint>http://petstore.swagger.io</con:endpoint>
-        <con:request/>
-        <con:assertion type="Valid HTTP Status Codes" id="c15a8e0f-6127-4508-9f00-d8a170c1e276" name="Valid HTTP Status Codes">
-          <con:settings/>
-          <con:configuration>
-            <codes>200</codes>
-          </con:configuration>
-        </con:assertion>
-        <con:assertion type="SwaggerComplianceAssertion" id="b3c080ac-3dc2-4f3b-bbf9-06ce42fed46b" name="Swagger Compliance Assertion">
-          <con:configuration>
-            <swaggerUrl>https://petstore.swagger.io/v2/swagger.json</swaggerUrl>
-            <strictMode>true</strictMode>
-          </con:configuration>
-        </con:assertion>
-        <con:assertion type="Response SLA Assertion" id="189bd6c1-22a8-441c-b1db-210cd536f220" name="Response SLA">
-          <con:configuration>
-            <SLA>200</SLA>
-          </con:configuration>
-        </con:assertion>
-        <con:credentials>
-          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
-          <con:authType>No Authorization</con:authType>
-        </con:credentials>
-        <con:parameters/>
-      </con:restRequest>
-    </con:config>
-  </con:testStep>
   <con:testStep type="restrequest" name="/pet/findByTags GET Request 1" id="c6e327e8-4184-4586-9fe6-5861e3a608f9">
     <con:settings/>
     <con:config service="Swagger Petstore" resourcePath="/v2/pet/findByTags" methodName="findPetsByTags" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/store/inventory" path="/store/inventory" id="d552ee8b-82ac-4896-a155-136edde0e77e" xmlns:con="http://eviware.com/soapui/config">
+<con:resource name="/store/inventory" path="/store/inventory" id="d552ee8b-82ac-4896-a155-136edde0e77e" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="d552ee8b-82ac-4896-a155-136edde0e77efileName">%2Fstore%2Finventory</con:setting>
   </con:settings>
@@ -22,6 +22,10 @@ Returns pet inventories by status</con:description>
     <con:request name="Request 1" id="9a70dd4d-be62-43a8-88f9-4e0dc50ecc6a" mediaType="application/json">
       <con:settings/>
       <con:endpoint>http://petstore.swagger.io</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="6bc2f173-2a07-4e59-9c6b-805d9d050e4b" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 3" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="6bc2f173-2a07-4e59-9c6b-805d9d050e4bfileName">TestCase-3</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="REST Request" id="10bc1412-0c40-4ea5-a7f0-4a13f79f90b4">
+    <con:settings/>
+    <con:config service="Swagger Petstore" methodName="uploadFile" resourcePath="/v2/pet/{petId}/uploadImage" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="REST Request" id="d7e24b87-b317-4fbe-b228-cf8942641f4c" mediaType="multipart/form-data">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://petstore.swagger.io</con:endpoint>
+        <con:request/>
+        <con:assertion type="Valid HTTP Status Codes" id="4c53b9d7-888f-40dd-a457-c7657c2b28a3" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="2bed0a4b-863b-4a39-818a-8e2241e8951f" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

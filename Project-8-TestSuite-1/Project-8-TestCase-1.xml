@@ -597,38 +597,6 @@
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep type="restrequest" name="/user/{username} GET Request 1" id="ba13f364-1850-49ad-aa51-729b3a01a32e">
-    <con:settings/>
-    <con:config service="Swagger Petstore" resourcePath="/v2/user/{username}" methodName="getUserByName" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:restRequest name="/user/{username} GET Request 1" id="bf66bdb8-50f9-4973-bde7-7a4ba0cafa28" mediaType="application/json">
-        <con:settings/>
-        <con:endpoint>http://petstore.swagger.io</con:endpoint>
-        <con:request/>
-        <con:assertion type="Valid HTTP Status Codes" id="b8f7f900-042a-4ecc-ab58-4f692938904d" name="Valid HTTP Status Codes">
-          <con:settings/>
-          <con:configuration>
-            <codes>200</codes>
-          </con:configuration>
-        </con:assertion>
-        <con:assertion type="SwaggerComplianceAssertion" id="7deaf030-ade4-4914-96a9-7e8af4bd9ada" name="Swagger Compliance Assertion">
-          <con:configuration>
-            <swaggerUrl>https://petstore.swagger.io/v2/swagger.json</swaggerUrl>
-            <strictMode>true</strictMode>
-          </con:configuration>
-        </con:assertion>
-        <con:assertion type="Response SLA Assertion" id="8a5abfb8-68be-4c0e-9b11-4b26ae11c8ee" name="Response SLA">
-          <con:configuration>
-            <SLA>200</SLA>
-          </con:configuration>
-        </con:assertion>
-        <con:credentials>
-          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
-          <con:authType>No Authorization</con:authType>
-        </con:credentials>
-        <con:parameters/>
-      </con:restRequest>
-    </con:config>
-  </con:testStep>
   <con:testStep type="restrequest" name="/user/{username} PUT Request 1" id="5dc79f7c-7434-4d1e-bc27-8e941a2e4ab4">
     <con:settings/>
     <con:config service="Swagger Petstore" resourcePath="/v2/user/{username}" methodName="updateUser" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -690,38 +658,6 @@
           </con:configuration>
         </con:assertion>
         <con:assertion type="Response SLA Assertion" id="f64daa97-4044-4888-a773-7b4c0a989659" name="Response SLA">
-          <con:configuration>
-            <SLA>200</SLA>
-          </con:configuration>
-        </con:assertion>
-        <con:credentials>
-          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
-          <con:authType>No Authorization</con:authType>
-        </con:credentials>
-        <con:parameters/>
-      </con:restRequest>
-    </con:config>
-  </con:testStep>
-  <con:testStep type="restrequest" name="/user/login GET Request 1" id="5af85cbf-8751-4b85-a815-18ffa313d710">
-    <con:settings/>
-    <con:config service="Swagger Petstore" resourcePath="/v2/user/login" methodName="loginUser" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:restRequest name="/user/login GET Request 1" id="b352b40d-23b5-4043-80e7-979f4a42660d" mediaType="application/json">
-        <con:settings/>
-        <con:endpoint>http://petstore.swagger.io</con:endpoint>
-        <con:request/>
-        <con:assertion type="Valid HTTP Status Codes" id="3b6e4236-c84f-45e4-8f93-2a1d3479c22f" name="Valid HTTP Status Codes">
-          <con:settings/>
-          <con:configuration>
-            <codes>200</codes>
-          </con:configuration>
-        </con:assertion>
-        <con:assertion type="SwaggerComplianceAssertion" id="d407cd8b-c33a-49bb-a440-2d597d6e5c0c" name="Swagger Compliance Assertion">
-          <con:configuration>
-            <swaggerUrl>https://petstore.swagger.io/v2/swagger.json</swaggerUrl>
-            <strictMode>true</strictMode>
-          </con:configuration>
-        </con:assertion>
-        <con:assertion type="Response SLA Assertion" id="e6c7a9fc-80bf-48fc-8a8e-c06b5648c605" name="Response SLA">
           <con:configuration>
             <SLA>200</SLA>
           </con:configuration>

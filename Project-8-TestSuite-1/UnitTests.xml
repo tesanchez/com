@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase id="1377ad3d-31cc-48c8-9ee7-f54f3a7f2553" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Project 8 TestCase 1" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+<con:testCase id="1377ad3d-31cc-48c8-9ee7-f54f3a7f2553" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="UnitTests" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
-    <con:setting id="1377ad3d-31cc-48c8-9ee7-f54f3a7f2553fileName">Project-8-TestCase-1</con:setting>
+    <con:setting id="1377ad3d-31cc-48c8-9ee7-f54f3a7f2553fileName">UnitTests</con:setting>
   </con:settings>
   <con:testStep type="restrequest" name="/pet/{petId} GET Request 1" id="a6c16499-ed8b-4862-84d6-3ca8e99f8c32">
     <con:settings/>

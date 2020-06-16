@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/pet/{petId}" path="/pet/{petId}" id="17677b3c-1e8c-45cb-a63b-eb297eb8e565" xmlns:con="http://eviware.com/soapui/config">
+<con:resource name="/pet/{petId}" path="/pet/{petId}" id="17677b3c-1e8c-45cb-a63b-eb297eb8e565" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="17677b3c-1e8c-45cb-a63b-eb297eb8e565fileName">%2Fpet%2F%7BpetId%7D</con:setting>
   </con:settings>
@@ -20,7 +20,7 @@ Find pet by ID</con:description>
       <con:mediaType>application/json</con:mediaType>
       <con:status>200</con:status>
       <con:params/>
-      <con:sampleContent xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <con:sampleContent xsi:nil="true"/>
     </con:representation>
     <con:representation type="RESPONSE">
       <con:mediaType>application/xml</con:mediaType>
@@ -68,6 +68,10 @@ Find pet by ID</con:description>
     <con:request name="Request 1" id="cd92d3c5-f6be-4d53-9fba-284958e4f75f" mediaType="application/json">
       <con:settings/>
       <con:endpoint>http://petstore.swagger.io</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>
@@ -103,6 +107,10 @@ Find pet by ID</con:description>
     <con:request name="Request 1" id="2c8d132e-c4b2-412b-b158-e4bfdd518e86" mediaType="application/json">
       <con:settings/>
       <con:endpoint>http://petstore.swagger.io</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>
@@ -113,7 +121,7 @@ Find pet by ID</con:description>
       <con:parameter>
         <con:name>api_key</con:name>
         <con:style>HEADER</con:style>
-        <con:description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <con:description xsi:nil="true"/>
       </con:parameter>
     </con:parameters>
     <con:representation type="RESPONSE">
@@ -139,6 +147,10 @@ Find pet by ID</con:description>
     <con:request name="Request 1" id="68cc13cf-678e-41b4-b8e0-a75fd4d8fd1d" mediaType="application/json">
       <con:settings/>
       <con:endpoint>http://petstore.swagger.io</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>
